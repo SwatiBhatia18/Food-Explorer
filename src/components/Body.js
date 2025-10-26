@@ -15,8 +15,7 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        //not working - to check for cors  // "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6299604&lng=77.203868&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6299604&lng=77.203868&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6299604&lng=77.203868&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       )
 
       if (!response.ok) {
